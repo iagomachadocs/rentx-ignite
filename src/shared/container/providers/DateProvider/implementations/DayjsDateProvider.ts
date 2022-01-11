@@ -22,6 +22,10 @@ class DayjsDateProvider implements IDateProvider {
     return dayjs().toDate();
   }
 
+  addDays(days: number): Date {
+    return dayjs().add(days, "days").toDate();
+  }
+
   private convertToUTC(date: Date): string {
     return dayjs(date).utc().local().format();
   }
