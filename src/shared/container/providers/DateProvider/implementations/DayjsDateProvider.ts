@@ -23,7 +23,11 @@ class DayjsDateProvider implements IDateProvider {
   }
 
   addDays(days: number): Date {
-    return dayjs().add(days, "days").toDate();
+    return dayjs().add(days, "day").toDate();
+  }
+
+  addHours(hours: number): Date {
+    return dayjs().add(hours, "hour").toDate();
   }
 
   private convertToUTC(date: Date): string {
