@@ -33,6 +33,10 @@ class DayjsDateProvider implements IDateProvider {
   private convertToUTC(date: Date): string {
     return dayjs(date).utc().local().format();
   }
+
+  compareIfBefore(startDate: Date, endDate: Date): boolean {
+    return dayjs(startDate).isBefore(endDate);
+  }
 }
 
 export { DayjsDateProvider };
