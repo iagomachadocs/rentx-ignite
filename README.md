@@ -1,5 +1,7 @@
 # Rentx
 
+![GitHub repo size](https://img.shields.io/github/repo-size/iagomachadocs/rentx-ignite?style=flat-square)
+
 <img src="rentx.png" alt="Rentx logo" height="50">
 
 > API REST de uma locadora de carros
